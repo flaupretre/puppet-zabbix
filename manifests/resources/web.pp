@@ -25,7 +25,6 @@ class zabbix::resources::web (
     zabbix_pass    => $zabbix_pass,
     apache_use_ssl => $apache_use_ssl,
     require        => [
-      Service['zabbix-server'],
       Package['zabbixapi'],
     ],
   }
