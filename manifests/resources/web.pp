@@ -45,7 +45,7 @@ class zabbix::resources::web (
     zabbix_user    => $zabbix_user,
     zabbix_pass    => $zabbix_pass,
     apache_use_ssl => $apache_use_ssl,
- }
+  }
   -> Zabbix_userparameters <<| |>> {
     zabbix_url     => $zabbix_url,
     zabbix_user    => $zabbix_user,
